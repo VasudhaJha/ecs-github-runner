@@ -16,7 +16,7 @@ This project sets up a **self-hosted GitHub Actions runner** on **AWS ECS (EC2 l
 
 ![Architecture Diagram](architecture.png) *(Have to add architecture diagram here once created)* -->
 
-### How It Works
+## How It Works
 
 1. An ECS container registers itself as a GitHub Actions self-hosted runner.
 2. When a GitHub workflow is triggered (`runs-on: self-hosted`), GitHub assigns it to the runner.
