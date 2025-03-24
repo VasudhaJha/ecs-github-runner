@@ -2,7 +2,7 @@
 
 resource "aws_s3_bucket" "remote_backend" {
   bucket = var.remote_backend_name
-  tags = var.tags
+  tags = var.common_tags
 }
 
 resource "aws_s3_bucket_versioning" "remote_backend" {
@@ -23,5 +23,6 @@ resource "aws_dynamodb_table" "state_locking_table" {
     type = "S"
   }
 
+  tags = var.common_tags
 }
 
